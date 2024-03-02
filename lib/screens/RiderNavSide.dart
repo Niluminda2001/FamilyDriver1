@@ -1,3 +1,4 @@
+import 'package:familydriver/screens/Login.dart';
 import 'package:flutter/material.dart';
 
 class RiderNavBar extends StatelessWidget {
@@ -70,7 +71,12 @@ class RiderNavBar extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Log out'),
-            onTap: () => print('Fav'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Loginpage()),
+              );
+            },
           ),
         ],
       ),

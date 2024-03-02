@@ -1,7 +1,8 @@
 import 'package:familydriver/Api/Customer_Loacation_End_points.dart';
 import 'package:familydriver/provider/LocationProvider.dart';
 import 'package:familydriver/provider/map_provider.dart';
-import 'package:familydriver/screens/Available_Driver.dart';
+import 'package:familydriver/screens/Driver/widgets/Driver_card1.dart';
+import 'package:familydriver/screens/Driver/Card.dart';
 import 'package:familydriver/screens/Customer/Drvers_List_Page.dart';
 import 'package:familydriver/screens/Customer/RideConfirmPage_a.dart';
 import 'package:familydriver/screens/splash_screen.dart';
@@ -28,7 +29,7 @@ void main() => runApp(
             useMaterial3: true,
           ),
           debugShowCheckedModeBanner: false,
-          home: Available_Driver(),
+          home: DriverCard(),
         ),
       ),
     );

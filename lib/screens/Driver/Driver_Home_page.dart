@@ -5,6 +5,8 @@ import 'package:familydriver/Api/ReqestedCard.dart';
 import 'package:familydriver/Api/Reqesting_End_Pointz.dart';
 import 'package:familydriver/constant/App_color.dart';
 import 'package:familydriver/model/UserModel.dart';
+import 'package:familydriver/screens/NavSidebar.dart';
+import 'package:familydriver/screens/RiderNavSide.dart';
 import 'package:familydriver/screens/widgets/Rouned_boutton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -70,6 +72,8 @@ class _DriverHomePageState extends State<DriverHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: RiderNavBar(),
+      appBar: AppBar(),
       backgroundColor: AppColors.primaryColor,
       body: SafeArea(
         child: Padding(
